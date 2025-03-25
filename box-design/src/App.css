@@ -1,0 +1,82 @@
+/* General styles */
+.App {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Styles for Greeting component */
+h1 {
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/* Styles for Box Design component */
+.container {  
+  padding: 20px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100px;
+  background-color: lightgray; 
+  border-style: groove;
+
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Parent Box */
+.parent-box {
+  width: 100px;
+  height: 70px;
+  background-color: red;
+  position: relative;
+  border-style: groove;
+}
+
+/* Child Boxes Positioning */
+.child-box {
+  position: absolute;
+}
+
+/* Top Left (Red & Larger) */
+.child-box.top-left {
+  width: 40px;
+  height: 30px;
+  background-color: red;
+  top: -20px;
+  left: -20px;
+  border-style: groove;
+}
+
+/* Bottom Left (Red & Larger) */
+.child-box.bottom-left {
+  width: 40px;
+  height: 30px;
+  background-color: red;
+  bottom: -20px;
+  left: -20px;
+  border-style: groove;
+}
+
+/* Top Right (Black & Smaller) */
+.child-box.top-right {
+  width: 25px;
+  height: 20px;
+  background-color: black;
+  top: -12px;
+  right: -12px;
+  border-style: groove;
+}
+
+/* Bottom Right (Black & Smaller) */
+.child-box.bottom-right {
+  width: 25px;
+  height: 20px;
+  background-color: black;
+  bottom: -12px;
+  right: -12px;
+  border-style: groove;
+}
